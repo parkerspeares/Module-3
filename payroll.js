@@ -8,6 +8,18 @@ const collectEmployees = function() {
 while (n < 3) {
   n++;
 }
+[
+  {
+      firstName:"John",
+      lastName:"Smith",
+      salary:12345
+  },
+  {
+      firstName:"Jane",
+      lastName:"Doe",
+      salary:54321
+  }
+]
 
 console.log(n);
 }
