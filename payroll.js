@@ -21,7 +21,17 @@ let text=`Average Salary`
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  
+  console.log(getRandomInt(3));
+  // Expected output: 0, 1 or 2
+  
+  console.log(getRandomInt(1));
+  // Expected output: 0
+  
+  console.log(Math.random());
 }
   // TODO: Select and display a random employee
 
