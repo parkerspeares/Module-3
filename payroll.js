@@ -8,15 +8,14 @@ const collectEmployees = function() {
 while (n < 3) {
   n++;
 }
-[
- let employee = {
-      firstName:"",
-      lastName:"",
-      salary:NaN
+
+ let employees = {
+      firstName:"Parker",
+      lastName:"Speares",
+      salary:125000
   };
 
-console.log(employee);
-]
+console.log(employees);
 
 console.log(n);
 }
