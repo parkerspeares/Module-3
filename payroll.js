@@ -9,11 +9,35 @@ while (n < 3) {
   n++;
 }
 
- let employees = {
-      firstName:"Parker",
-      lastName:"Speares",
-      salary:125000
+let employees = {
+  firstName:"Parker",
+  lastName:"S",
+  salary:50000,
   };
+
+  function getEmployeeInput() {
+    let employees = [];
+    let numberOfEmployees = parseInt(prompt("Enter the number of employees:"));
+  
+        for (let i = 0; i < numberOfEmployees; i++) {
+            let firstName = prompt("Enter the first name of employee " + (i + 1) + ":");
+            let lastName = prompt("Enter the last name of employee " + (i + 1) + ":");
+            let salary = parseFloat(prompt("Enter the salary of employee " + (i + 1) + ":"));
+  
+            let employee = {
+                firstName: firstName,
+                lastName: lastName,
+                salary: salary
+             };
+  
+            employees.push(employee);
+        }
+  
+        return employees;
+    }
+  
+    let employeeArray = getEmployeeInput();
+    console.log(employeeArray);
 
 console.log(employees);
 
